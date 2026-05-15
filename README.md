@@ -135,6 +135,7 @@ incoming_message) print()
 ## Output:
 ## Client:
 <img width="1600" height="386" alt="WhatsApp Image 2026-05-15 at 8 35 28 AM" src="https://github.com/user-attachments/assets/1bee2520-a09b-4eca-9f2e-09c015e0d9bf" />
+
 ## Server:
 <img width="1600" height="370" alt="WhatsApp Image 2026-05-15 at 8 35 40 AM" src="https://github.com/user-attachments/assets/71abc7c5-5209-4901-a516-fecc1a53ac96" />
 
