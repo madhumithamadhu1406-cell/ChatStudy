@@ -73,6 +73,72 @@ Client-server chat applications are versatile tools that facilitate real-time co
 
 Client-server chat applications are foundational to real-time communication over networks. They incorporate principles of socket programming, communication protocols, and security mechanisms to provide a seamless user experience. Understanding the basics of client-server chat applications is essential for developers involved in networked application development, as they form the backbone of various collaborative communication systems. As technology evolves, chat applications continue to adapt, incorporating new features and technologies to enhance user interaction and connectivity.
 
+## Program
+## Client
+```
+Name:Madhumitha V
+Register number:212225040218
+
+import socket 
+s = socket.socket() 
+host = input(str('Enter hostname or host IP : ')) port 
+= 8080 
+s.connect((host, port)) 
+print('Connected to chat server') 
+while 1: 
+incoming_message = s.recv(1024) 
+incoming_message = 
+incoming_message.decode() print(' Server : ', 
+incoming_message) print() 
+message = input(str('>> ')) 
+message = 
+message.encode() 
+s.send(message) 
+print('Sent') 
+print()
+```
+## Server:
+```
+Name:Madhumitha V
+Register Number:212225040218
+
+import socket 
+s = socket.socket() 
+host = socket.gethostname() 
+print(' Server will start on host : ', 
+host) port = 8080 
+s.bind((host, port)) 
+print() 
+print('Waiting for 
+connection') 
+print() 
+s.listen(1) 
+conn, addr = s.accept() 
+print(addr, ' Has connected to the 
+server') print() 
+while 1: 
+message = 
+input(str('>> ')) 
+message = 
+message.encode(
+) 
+conn.send(messa
+ge) print('Sent') 
+print() 
+incoming_message = conn.recv(1024) 
+incoming_message = 
+incoming_message.decode() 
+print(' Client : ', 
+incoming_message) print()
+```
+
+## Output:
+## Client:
+<img width="1600" height="386" alt="WhatsApp Image 2026-05-15 at 8 35 28 AM" src="https://github.com/user-attachments/assets/1bee2520-a09b-4eca-9f2e-09c015e0d9bf" />
+## Server:
+<img width="1600" height="370" alt="WhatsApp Image 2026-05-15 at 8 35 40 AM" src="https://github.com/user-attachments/assets/71abc7c5-5209-4901-a516-fecc1a53ac96" />
+
+
 
 ## Result:
 
